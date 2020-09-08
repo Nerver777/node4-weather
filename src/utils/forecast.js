@@ -12,7 +12,7 @@ const forecast = (lat, long, callback) => {
       callback(
         undefined,
         body.daily.data[0].summary +
-          ` Its currently ${body.currently.temperature} The min is expexted to be ${body.daily.data[0].temperatureLow} and the max ${body.daily.data[0].temperatureHigh}`
+          ` Its currently ${body.currently.temperature}. The min is expexted to be ${body.daily.data[0].temperatureLow} and the max ${body.daily.data[0].temperatureHigh}`
       );
     }
   });
